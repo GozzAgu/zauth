@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { JwtPayload } from 'jsonwebtoken'
 
-definePageMeta({ middleware: 'auth' })
+definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 const { logout, user, token } = useUserSession()
 
 interface Post {
